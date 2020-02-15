@@ -1,0 +1,91 @@
+@import "./settings/colors";
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.steps-items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.steps-decoration {
+  margin-top: 10px;
+}
+
+.steps-divider {
+  width: 40px;
+  height: 1px;
+  background-color: $black;
+}
+.steps-title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.steps-item {
+  text-align: center;
+  font-size: 14px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.steps-text {
+  font-size: 12px;
+}
+
+.steps-img-bag {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-image: url("./../assets/steps-bag.png");
+  border: none;
+}
+
+.steps-img-shirt {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-image: url("./../assets/steps-shirt.png");
+  border: none;
+}
+
+.steps-img-glass {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-image: url("./../assets/steps-glass.png");
+  border: none;
+}
+
+.steps-img-recycle {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-image: url("./../assets/steps-recycle.png");
+  border: none;
+}
+
+.steps-btn {
+  border: 1px solid $black;
+  padding: 20px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-size: 22px;
+  width: 180px;
+  margin-top: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.steps-items-container {
+  background-color: $light-grey;
+}

@@ -1,0 +1,21 @@
+@import "./settings/_fonts.scss";
+@import "./settings/_colors.scss";
+@import "./nav";
+@import "./header";
+@import "./three-columns";
+@import "./steps";
+@import "./about";
+@import "./help";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+a {
+  color: $black;
+}

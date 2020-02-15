@@ -1,0 +1,43 @@
+.home-about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home-about-left {
+  background-color: $light-grey;
+  width: 50%;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 25px;
+}
+
+.home-about-text {
+  padding: 0 100px;
+}
+
+.home-about-sign {
+  height: 75px;
+  width: 150px;
+  background-image: url("./../assets/about-sign.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateX(130px);
+}
+
+.home-about-title {
+  font-size: 24px;
+}
+
+.home-about-right {
+  width: 50%;
+  height: 400px;
+  background-image: url(./../assets/about-team.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

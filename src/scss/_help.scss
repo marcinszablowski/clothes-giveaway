@@ -1,0 +1,33 @@
+@import "./settings/colors";
+
+.home-help-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.home-help-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.help-btn {
+  height: 70px;
+  border: 1px solid $black;
+  margin: 0 10px;
+  font-size: 18px;
+  width: 180px;
+  margin-top: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.home-help-text {
+  width: 50%;
+  text-align: center;
+  margin: 15px auto;
+}

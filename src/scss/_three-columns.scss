@@ -1,0 +1,30 @@
+@import "./settings/_colors.scss";
+
+.home-column-container {
+  height: 200px;
+  width: 100%;
+  background-color: $yellow;
+  color: $black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.column {
+  padding: 50px;
+}
+
+.column-number {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 6px 0;
+}
+
+.column-subtitle {
+  text-transform: uppercase;
+}
+
+.column-text {
+  font-size: 10px;
+}

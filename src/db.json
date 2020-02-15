@@ -1,0 +1,98 @@
+{
+  "foundations": [
+    { "id": 1, 
+      "name": "Fundacja Warszawa", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 2, 
+      "name": "Fundacja Lublin", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 3, 
+      "name": "Fundacja Szczecin", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 4, 
+      "name": "Fundacja Kraków", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 5, 
+      "name": "Fundacja Gdynia", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 6, 
+      "name": "Fundacja Zakopane", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 7, 
+      "name": "Fundacja Cieszyn", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 8, 
+      "name": "Fundacja Wrocław", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 9, 
+      "name": "Fundacja Poznań", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    }
+  ],
+  "organizations": [
+    { "id": 10, 
+      "name": "Organizacja Żoliborz", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 11, 
+      "name": "Organizacja Targówek", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 12, 
+      "name": "Organizacja Usynów", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 13, 
+      "name": "Organizacja Bielany", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 14, 
+      "name": "Organizacja Ursus", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 15, 
+      "name": "Organizacja Mokotów", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    }
+  ],
+  "collections": [
+    { "id": 16, 
+      "name": "Zbiórka Europa", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 17, 
+      "name": "Zbiórka Afryka", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    },
+    { "id": 18, 
+      "name": "Zbiórka Azja", 
+      "goal": "Cel i misja: pomoc",
+      "items": "ubrania, meble, zabawki, jedzenie"
+    }
+  ]
+}
