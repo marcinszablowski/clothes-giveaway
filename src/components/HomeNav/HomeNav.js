@@ -28,8 +28,8 @@ function Nav() {
           <li className="nav-menu-start">Start</li>
           <li><LinkScroll to="oCoChodzi" smooth={true}>O co chodzi?</LinkScroll></li>
           <li><LinkScroll to="oNas" smooth={true}>O nas</LinkScroll></li>
-          <li>Fundacja i organizacje</li>
-          <li>Kontakt</li>
+          <li><LinkScroll to="fundacja" smooth={true}>Fundacja i organizacje</LinkScroll></li>
+          <li><LinkScroll to="kontakt" smooth={true}>Kontakt</LinkScroll></li>
 
         </ul>
       </div>

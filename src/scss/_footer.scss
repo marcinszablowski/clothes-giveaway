@@ -1,0 +1,33 @@
+.home-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home-footer-social {
+  position: absolute;
+  display: flex;
+  right: 80px;
+}
+
+.home-footer-facebook,
+.home-footer-instagram {
+  width: 20px;
+  height: 20px;
+}
+
+.home-footer-facebook {
+  background-image: url("./../assets/fb.png");
+  background-size: cover;
+}
+
+.home-footer-instagram {
+  background-image: url("./../assets/instagram.png");
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.copyright {
+  font-size: 10px;
+}

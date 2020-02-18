@@ -6,6 +6,8 @@ import HomeThreeColumns from '../HomeThreeColumns/HomeThreeColumns';
 import HomeSteps from '../HomeSteps/HomeSteps';
 import HomeAboutUs from '../HomeAboutUs/HomeAboutUs';
 import HomeHelp from '../HomeHelp/HomeHelp';
+import HomeForm from '../HomeForm/HomeForm';
+import HomeFooter from '../HomeFooter/HomeFooter';
 
 function Home() {
   return (
@@ -16,6 +18,8 @@ function Home() {
       <HomeSteps />
       <HomeAboutUs />
       <HomeHelp />
+      <HomeForm />
+      <HomeFooter />
     </div>
   );
 }
