@@ -1,73 +1,94 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
 
-function HomeHelp() {
+class HomeHelp extends Component {
 
-  const [state, setState] = useState([]);
-  const [page, setPage] = useState(1);
+  state = {
+    data: [],
+    page: 1,
+    name: "",
+    card: ""
+  }
 
-  function getData(e) {
-    const url = "http://localhost:3005/";
+  changeCard = e => {
+    this.setState({ card: e.target.name });
+    this.setState({
+      page: 1
+    }, () => {
+      this.getData()
+    });
 
-    console.log(e.target.name)
-    // console.log(e.target);
+  }
 
-    fetch(url + e.target.name + `?_page=${page}&_limit=3`)
+  changePage = e => {
+    this.setState({
+      page: e.target.getAttribute("data-page")
+    }, () => {
+      this.getData();
+    });
+  }
+
+  getData = e => {
+    const url = "http://localhost:3000/";
+
+    if (this.state.card === "") {
+      return
+    }
+
+    fetch(`${url}${this.state.card}?_page=${this.state.page}&_limit=3`)
       .then(res => res.json())
-      .then(data => { setState(data) })
+      .then(data => { this.setState({ data: data }) })
   }
 
-  function getPage(e) {
-    // setPage(e.target.page);
-    console.log(e.target.id);
-    console.log(e.target.smile);
-    console.log(e.target);
-
-  }
-
-  console.log(state);
+  // componentDidUpdate() {
+  //   console.log(this.state);
+  // }
 
 
-  let list = state;
-  const showList = list.map((item, index) => {
-    return (
-      <div className="home-help-item" id={index}>
-        <div className="home-help-main">
-          <p className="home-help-name">{item.name}</p>
-          <p className="home-help-goal">{item.goal}</p>
+
+  render() {
+
+    let list = this.state.data;
+    const showList = list.map((item, index) => {
+      return (
+        <div className="home-help-item" key={index}>
+          <div className="home-help-main">
+            <p className="home-help-name">{item.name}</p>
+            <p className="home-help-goal">{item.goal}</p>
+          </div>
+          <div className="home-help-items">
+            <p>{item.items}</p>
+          </div>
         </div>
-        <div className="home-help-items">
-          <p>{item.items}</p>
+      )
+    });
+
+    return (
+      <div id="fundacja">
+        <div className="home-help-header">
+          <p className="home-header-text">Komu pomagamy?</p>
+          <div className="decoration"></div>
+        </div>
+        <div className="home-help-buttons">
+          <button className="help-btn" onClick={this.changeCard} name="foundations" page="1">Fundacjom</button>
+
+          <button className="help-btn" onClick={this.changeCard} name="organizations" page="1">Organizacjom pozarządowym</button>
+
+          <button className="help-btn" onClick={this.changeCard} name="collections" page="1">Lokalnym zbiórkom</button>
+        </div>
+        <p className="home-help-text">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
+
+        <div className="home-help-list">
+          {showList}
+        </div>
+
+        <div className="home-help-pagiante">
+          <div className="home-help-page" data-page={1} onClick={this.changePage}>1</div>
+          <div className="home-help-page" data-page={2} onClick={this.changePage}>2</div>
+          <div className="home-help-page" data-page={3} onClick={this.changePage}>3</div>
         </div>
       </div>
     )
-  })
-
-  return (
-    <div id="fundacja">
-      <div className="home-help-header">
-        <p className="home-header-text">Komu pomagamy?</p>
-        <div className="decoration"></div>
-      </div>
-      <div className="home-help-buttons">
-        <button className="help-btn" onClick={getData} name="foundations">Fundacjom</button>
-
-        <button className="help-btn" onClick={getData} name="organizations">Organizacjom pozarządowym</button>
-
-        <button className="help-btn" onClick={getData} name="collections">Lokalnym zbiórkom</button>
-      </div>
-      <p className="home-help-text">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
-
-      <div className="home-help-list">
-        {showList}
-      </div>
-
-      <div className="home-help-pagiante">
-        <div className="home-help-page" onClick={getPage} id="1">1</div>
-        <div className="home-help-page" onClick={getPage} id="2">2</div>
-        <div className="home-help-page" onClick={getPage} id="3">3</div>
-      </div>
-    </div>
-  )
+  }
 }
 
 export default HomeHelp;

@@ -1,0 +1,54 @@
+@import "./settings/colors";
+
+.login-header-container,
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-header-container {
+  margin-top: 60px;
+}
+
+.form-container {
+  background-color: $light-grey;
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 50px;
+
+  input {
+    width: 220px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid $black;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+
+  label {
+    width: 220px;
+    font-size: 12px;
+  }
+}
+
+.login-buttons {
+  display: flex;
+  width: 80%;
+  margin: 30px auto;
+  justify-content: space-around;
+
+  button {
+    background: none;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+#login-button {
+  border: 1px solid $black;
+}

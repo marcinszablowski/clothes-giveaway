@@ -25,7 +25,11 @@ function Nav() {
 
       <div className="nav-menu">
         <ul>
-          <li className="nav-menu-start">Start</li>
+          <Link to="/" style={{
+            textDecoration: "none"
+          }}>
+            <li className="nav-menu-start">Start</li>
+          </Link>
           <li><LinkScroll to="oCoChodzi" smooth={true}>O co chodzi?</LinkScroll></li>
           <li><LinkScroll to="oNas" smooth={true}>O nas</LinkScroll></li>
           <li><LinkScroll to="fundacja" smooth={true}>Fundacja i organizacje</LinkScroll></li>
